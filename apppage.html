@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WhatsApp Lite</title>
+  <style>
+   
+   body {
+  background-image: url("images\images11.jpeg"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #e5ddd5;
+    }
+
+    .top-bar {
+      background-color: #075e54;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .top-bar h1 {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .online-status {
+      font-size: 12px;
+      color: lightgreen;
+      animation: blink 1.5s infinite;
+    }
+
+    @keyframes blink {
+      0% { opacity: 0; }
+      50% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+
+    .content {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .content h2 {
+      color: red;
+      font-size: 24px;
+    }
+
+    .content h3 {
+      color: #333;
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    .money-image {
+      width: 250px;
+      margin: 30px 0;
+    }
+
+    .apply-btn {
+      background-color: #25d366;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 30px;
+      cursor: pointer;
+      animation: dance 1s infinite alternate;
+    }
+
+    @keyframes dance {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: gray;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <div>
+      <h1>WhatsApp</h1>
+      <span class="online-status">online</span>
+    </div>
+    <div>...</div>
+  </div>
+
+  <div class="content">
+    <h2>CONGRATULATIONS!</h2>
+    <h3>YOU QUALIFIED!</h3>
+    <img src="images/11.jpg" alt="Money" class="money-image">
+    <br>
+    <button class="apply-btn">
+        <img src="icon.png" alt="icon" style="width: 20px; vertical-align: middle; margin-right: 8px;">
+        APPLY NOW
+      </button>
+  </div>
+
+  <div class="footer">
+    Powered by Facebook Lite
+  </div>
+
+  <script>
+    // Fake redirect
+    function redirect() {
+      alert("Redirecting to rewards page...");
+      window.location.href = "https://your-website-link.com";
+    }
+
+    // Optional: Play fake notification sound
+    // let audio = new Audio("https://notificationsounds.com/storage/sounds/file-sounds-1158-pristine.mp3");
+    // setTimeout(() => { audio.play(); }, 2000);
+  </script>
+
+</body>
+</html>
